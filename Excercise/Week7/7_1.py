@@ -2,7 +2,6 @@ class Bank:
     def __init__(self,name):
         self.__name = name
         self.__user_list = []
-        self.__card_list = []
         self.__atm_list = []
         self.__seller_list = []
 
@@ -144,7 +143,6 @@ class Transaction:
 class Card:
     def __init__(self,card_no, account, pin):
         self.__card_no = card_no
-        self.__account = account
         self.__pin = pin
     
     @property
@@ -228,7 +226,6 @@ class Seller:
 class EDC_machine:
     def __init__(self,edc_no,seller):
         self.__edc_no = edc_no
-        self.__seller = seller
 
     @property
     def edc_no(self):
